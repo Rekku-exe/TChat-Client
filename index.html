@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tchat</title>
+        <link rel="icon" href="img/Logo-Tchat.ico"/>
+        <link rel="stylesheet" type="text/css" href="css/Tchat.css"/>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img id="logo" src="./img/Logo-Tchat.png"></a>
+            <div id="boxName">
+                <input type="button" id="b-nom" class="all-nom" value="START" onclick="startconnection()"/>
+            </div>
+            <div id="boxName">
+                <form id="nameForm">
+                    <input type="submit" id="b-nom" class="all-nom" value="Changer de nom"/>
+                    <input type="text" id="t-nom" class="all-nom" placeholder="invité" autocomplete="off"/>
+                </form>
+            </div>
+        </header>
+        <main id="main">
+            <div id="chat_inner">
+                <div id="chat_box">
+                    
+                </div>
+                <div class="chat_text-container">
+                    <form id="msgForm">
+                        <input id="t-entre" type="text" placeholder="Envoyer un message" autocomplete="off"/>
+                        <input type="submit" class="chat_text-btn" value="Envoyer"/>
+                    </form>
+                </div>
+            </div>
+            <div id="list_part">
+                <h2>Utilisateurs</h2>
+                <div class="divider"></div>
+            
+            </div>
+        </main>
+        <footer>
+            <p id="copyright">@Rekku</p>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <!--script src="http://localhost:6950/socket.io/socket.io.js"></script-->
+        <script src="js/client.js"></script>
+    </body>
+</html>
